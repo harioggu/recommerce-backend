@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Component
 public class JwtUtil {
-    private final String jwtSecret = "yourSecretKey"; // Use a strong secret in production!
+    private final String jwtSecret = "w7xZi-UGjdrctmAskbdoQ@ve5fgIUvzqnlELkZRI6_lkk"; // Use a strong secret in production!
     private final long jwtExpirationMs = 86400000; // 1 day
 
     public String generateToken(String email) {
