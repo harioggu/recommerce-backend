@@ -13,8 +13,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                    .allowedOrigins("https://statuesque-hamster-e20480.netlify.app/login")
+                    .allowedOrigins("https://statuesque-hamster-e20480.netlify.app")
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                    .allowedHeaders("*")
                     .allowCredentials(true);
             }
         };
